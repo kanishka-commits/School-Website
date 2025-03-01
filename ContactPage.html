@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="" alt="Logo">
+            </a>
+
+            <div class="nav-links" id="navlinks" >
+                
+                <i class="fa fa-minus-square-o" onclick=hideMenu()></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">NOTICE</a></li>
+                    <li><a href="">ADMISSION</a></li>
+                    <li><a href="">WHY US</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa fa-sort-desc" onclick=showMenu()></i>
+            
+            
+
+        </nav>
+        <h1>CONTACT US</h1>
+
+        <section class="contactus">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497700.1123005915!2d77.30127814132629!3d12.95379021332858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1740771145400!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+
+    </section>
+
+    
+
+
+     <!-- F O O T E R -->
+     <!-- <section class="footer">
+        <h4>About Us</h4>
+        <div class="body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo sequi sapiente, quod reprehenderit <br>officia deleniti, consequuntur expedita assumenda delectus dolorem excepturi <br> at amet voluptatibus ex quasi placeat optio eius accusamus?
+        </div>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            
+        </div>
+        <div class="name">Made with <i id="heart" class="fa fa-heart" onclick="changeHeart()" ></i> by Kanishka Panwar</div>
+     </section> -->
+    <script>
+
+let heart = document.getElementById("heart");
+     /*T O G G L E   H E A R T*/
+    function changeHeart() {
+        if (heart.classList.contains("fa fa-heart")) {
+        heart.classList.remove("fa fa-heart");
+        heart.classList.add("fa fa-heart-o");
+        } else {
+            heart.classList.remove("fa fa-heart-o");
+        heart.classList.add("fa fa-heart");
+        }
+        }
+
+        let navL=document.getElementById("navlinks");
+        function showMenu(){
+            navL.style.right = "0";
+        }
+
+        function hideMenu(){
+            navL.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
