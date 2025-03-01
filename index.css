@@ -44,8 +44,94 @@ nav{
     text-decoration: none;
     color: white;
 
+    
+
+}
+ /* H O  V E R   E F F E C T */
+.logo-txt .b{
+    transition:0.7s ease;
 }
 
+.logo-txt .b:hover{
+    font-size: 30px;
+}
+
+.logo-txt .dot{
+    transition:0.7s ease;
+}
+
+.logo-txt .dot:hover{
+    font-size: 30px;
+}
+
+.logo-txt .s{
+    transition:0.7s ease;
+}
+
+.logo-txt .s:hover{
+    font-size: 29px;
+}
+
+.logo-txt .c{
+    transition:0.7s ease;
+}
+
+.logo-txt .c:hover{
+    font-size: 28px;
+}
+
+.logo-txt .h{
+    transition:0.7s ease;
+}
+
+.logo-txt .h:hover{
+    font-size: 27px;
+}
+
+.logo-txt .o{
+    transition:0.7s ease;
+}
+
+.logo-txt .o:hover{
+    font-size: 26px;
+}
+
+.logo-txt .oo{
+    transition:0.7s ease;
+}
+
+.logo-txt .oo:hover{
+    font-size: 25px;
+}
+
+.logo-txt .l{
+    transition:0.7s ease;
+}
+
+.logo-txt .l:hover{
+    font-size: 24px;
+}
+.logo-txt .e{
+    transition:0.7s ease;
+}
+
+.logo-txt .e:hover{
+    font-size: 23px;
+}
+
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+.nav-links a{
+    transition: 0.6s;
+}
+.nav-links a:hover{
+    font-size: 19px;
+}
 
 .main{
     /*these 4 lines ensure precise centering but requires careful consideration of positioning.  */
@@ -106,7 +192,7 @@ nav .fa-minus-square-o,nav .fa-sort-desc{
     }
     
     .nav-links{
-        position: absolute;
+        position: fixed;
         background:rgba(240,180,136,0.7)  ;
         height:100vh;
         width:200px;
@@ -200,7 +286,7 @@ nav .fa-minus-square-o,nav .fa-sort-desc{
 
 
 
-/* -----ABOUT US------ */
+/* -----WHY US------ */
 
 .sub-header{
     height: 50vh;
@@ -246,13 +332,174 @@ nav .fa-minus-square-o,nav .fa-sort-desc{
 
 /* CONTACT US */
 
-.contactus{
+.loc{
     width:80%;
     margin:auto;
     padding: 100px 0;
 
 }
 
-.contactus iframe{
+.loc iframe{
     width:100%;
+}
+
+.contactus{
+    width:80%;
+    margin:auto;
+}
+
+.contact-col{
+    flex-basis:48%;
+    margin-bottom:30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: rgb(240,180,136);
+    margin:10px;
+    margin-right:30px;
+}
+
+.contact-col div h5{
+    font-size: 15px;
+}
+
+.contact-col div p{
+    font-size: 12px;
+}
+
+.contact-col input, .contact-col textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid rgb(240,180,136);
+    /* box-sizing: border-box; */
+
+}
+/* @media(max-width: 700px){
+    .contact-col form{
+        WE HAVE TO MAKE THE FORM SHOW BELOW
+    }
+} */
+
+
+
+/* A B O U T US  */
+
+.aboutus-header{
+    height: 50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(components/admission1.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.aboutus-header h1{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+.middle .body{
+   
+    padding: 10px 60px;
+    width:50%;
+}
+
+.middle .body h2,.bottom .body h2{
+    padding: 10px 0;
+}
+
+.middle,.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle img{
+    width: 80%;
+    padding: 50px;
+    
+}
+.bottom img{
+    width: 80%;
+    padding: 50px;
+    
+}
+.bottom .body{
+    padding-right: 70px;
+    width: 50%;
+}
+
+.bottom .endpara{
+    padding-bottom: 40px;
+}
+
+/* .middle img:hover, .bottom img:hover{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+} */
+
+
+/* ADMISSION */
+
+.admission-header{
+    height: 50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(components/admission.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.admission-header h1{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+
+.admission-col img{
+    width: 70%;
+    padding: 100px;
+}
+.admission-col h1{
+    padding:120px 0 12px 0;
+
+}
+
+
+.admission-col div p{
+    font-size: 12px;
+}
+
+.admission-col input, .admission-col textarea{
+    width:80%;
+    padding:15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid rgb(240,180,136);
+    /* box-sizing: border-box; */
+
+}
+
+@media(max-width: 700px){
+    .admission-col input, .admission-col textarea{
+        width:50%;
+        padding:15px;
+        margin-bottom: 17px;
+        outline: none;
+        border: 1px solid rgb(240,180,136);
+        /* box-sizing: border-box; */
+    
+    }
 }

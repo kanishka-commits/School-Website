@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section class="sub-header">
+    <section class="admission-header">
         <nav>
             <a href="index.html">
                 <img src="" alt="Logo">
@@ -36,26 +36,36 @@
             
 
         </nav>
-        <h1>WHY US?</h1>
+        <h1>ADMISSION</h1>
 
 
     </section>
 
-    <section class="final-about">
+    <section class="contactus">
         <div class="row">
-            <div class="about-col">
-                <h1>We're the World's Number One</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minima mollitia itaque dignissimos omnis accusamus dicta ab quidem eius doloremque aperiam, quam voluptatibus, necessitatibus blanditiis illum eum aut nam. Deserunt?</p>
-                <a href="" class="aboutus">EXPLORE NOW</a>
-            </div>
-                
             
-            <div class="about-col">
-                <img src="./components/aboutusmain.jpg">
+            <div class="admission-col">
+                
+                <h1>ADMISSIONS ARE OPEN NOW!</h1>
+                <form action="form-handler.php" method="post">
+                    
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
             </div>
 
+            <div class="admission-col">
+                <img src="components/meeting.jpg">
+            </div>
         </div>
     </section>
+
+
+
+
 
 
      <!-- F O O T E R -->
